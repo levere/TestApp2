@@ -21,6 +21,16 @@
                 "label": "Button"
             }
         },
+        "number": {
+            "prototype": "digit/ui/number-field.reel",
+            "properties": {
+                "element": {"#": "number"},
+                "enabled": true,
+                "max": "200",
+                "min": "0",
+                "value": 100
+            }
+        },
         "slider": {
             "prototype": "digit/ui/slider.reel",
             "properties": {
@@ -38,6 +48,7 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <div data-montage-id="slider"></div>
         <button data-montage-id="button"></button>
+        <input type="number" data-montage-id="number">
     </div>
 </body>
 </html>
