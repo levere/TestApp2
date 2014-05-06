@@ -20,12 +20,23 @@
                 "enabled": true,
                 "label": "Button"
             }
+        },
+        "slider": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider"},
+                "axis": "horizontal",
+                "max": 100,
+                "min": 0,
+                "value": 50
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <div data-montage-id="slider"></div>
         <button data-montage-id="button"></button>
     </div>
 </body>
